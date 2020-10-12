@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /* 100 ViewportHeight = ocupe 100% da tela visível */
+    color: white;
+}
+
+:root {
+    font-size: 62.5%; /* Equivale a 10px */
+}
+
+body, input, button, textarea {
+    font-weight: 400;
+    font-size: 1.8rem; /* Pega de acordo com o root, que é o elemento pai de todos: HTML */
+    line-height: 1;
+    font-family: 'Nunito', sans-serif;
+}
