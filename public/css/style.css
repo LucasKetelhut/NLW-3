@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     height: 100vh; /* 100 ViewportHeight = ocupe 100% da tela visível */
     color: white;
+    background-color: #EBF2F5;
 }
 
 :root {
