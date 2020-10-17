@@ -78,7 +78,7 @@ function toggleSelect(event) {
     const button = event.currentTarget;    
 
     // atualizar input hidden com valor selecionado
-    const input = document.querySelector('[name = "open-on-weekends"]');
+    const input = document.querySelector('[name = "open_on_weekends"]');
     
     input.value = button.dataset.value
 
@@ -89,4 +89,15 @@ function toggleSelect(event) {
 
     // colocar a classe .active
     button.classList.add('active');
+}
+
+// validando o submit
+function validate(event) {
+    const valLat = document.querySelector('[name=lat]').value
+    const valLng = document.querySelector('[name=lng]').value
+    
+    if (valLat === '' || valLng === ''){
+        event.preventDefault() // evita o envio do form
+        alert('Escolha a localização no mapa')
+    }
 }

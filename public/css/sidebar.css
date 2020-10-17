@@ -23,6 +23,7 @@ aside.sidebar footer button {
     justify-content: center;
 
     transition: background-color .2s;
+    outline: none;
 }
 
 aside.sidebar footer button:hover {

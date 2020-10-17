@@ -40,7 +40,9 @@
   <body>
     <div id="page-create-orphanage">
       <aside class="animate-right sidebar">
-        <img src="/images/map-marker.svg" alt="Happy" />
+        <a href="/orphanages">
+          <img src="/images/map-marker.svg" alt="Happy" />
+        </a>
 
         <footer>
           <button onclick="history.back()">
@@ -50,15 +52,15 @@
       </aside>
 
       <main class="animate-appear with-sidebar">
-        <form action="">
+        <form action="save-orphanage" method="POST" onsubmit="validate(event)">
           <fieldset>
             <legend>Dados</legend>
 
             <div class="map-container">
               <div id="mapid"></div>
 
-              <input type="hidden" name="lat" />
-              <input type="hidden" name="lng" />
+              <input type="hidden" name="lat"/>
+              <input type="hidden" name="lng"/>
 
               <footer>
                 <a href="#" id="select-point">
@@ -90,7 +92,7 @@
               <div class="images-upload" id="images">
                 <div class="new-upload">
                   <input
-                    type="text"
+                    type="url"
                     name="images"
                     placeholder="Cole o link da foto aqui"
                     required
@@ -126,21 +128,21 @@
             </div>
 
             <div class="input-block">
-              <label for="oppening-hours">Horário das visitas</label>
+              <label for="opening_hours">Horário das visitas</label>
               <input
                 type="text"
-                id="oppening-hours"
-                name="oppening-hours"
+                id="opening_hours"
+                name="opening_hours"
                 required
               />
             </div>
 
             <div class="input-block">
-              <label for="open-on-weekends">Atende fim de semana?</label>
+              <label for="open_on_weekends">Atende fim de semana?</label>
               <input
                 type="hidden"
-                name="open-on-weekends"
-                id="open-on-weekends"
+                name="open_on_weekends"
+                id="open_on_weekends"
                 value="1"
                 required
               />
