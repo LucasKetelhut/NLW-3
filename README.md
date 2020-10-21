@@ -1,5 +1,8 @@
 # NLW-3
 Projeto web para localização e cadastro de orfanatos, assim como suas informações. Feito durante a terceira edição da semana Next Level Week, organizada pela Rocketseat. Tilha Discovery.
+
+![](public/images/print.png)
+
 Neste projeto eu aprendi muito, adorei produzir do zero uma aplicação tão interessante. Com a ajuda da Rocketseat aprendi muitos conceitos novos e reforcei conceitos antigos, me acrescentou muito.
 Usamos tecnologias como HTML, CSS, Javascript no frontend e Javascript em NodeJS com SQLite para o backend. Meu primeiro contato de verdade com o backend e o banco de dados de uma aplicação.
 Uma semana incrível!
